@@ -1,4 +1,6 @@
-# rer
+#QIT_Assignment
+
+Dependencies/Libraries Used:
 
 1.`implementation 'com.squareup.picasso:picasso:2.71828': 
 -This is a library for loading images in Android. Picasso handles image downloading and caching, and provides a simple API for displaying images in ImageViews. 
