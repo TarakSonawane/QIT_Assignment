@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D8D8D8"
+    tools:context=".Fragments.signup_fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+
+                app:layout_constraintBottom_toTopOf="@id/login_btn"
+
+                app:cardCornerRadius="30dp"
+                android:layout_marginVertical="20dp"
+                android:id="@+id/signup_card"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeMaxTextSize="100sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:maxLines="1"
+
+                        android:padding="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Create an account"
+                        android:layout_gravity="center"
+                        android:textSize="30dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:textFontWeight="1200"/>
+
+                    <TextView
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeMaxTextSize="100sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:maxLines="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:layout_gravity="left"
+                        android:textSize="21dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textFontWeight="1200"/>
+
+                    <EditText
+                        android:layout_marginHorizontal="10dp"
+                        android:drawableEnd="@drawable/user_34"
+                        android:padding="7dp"
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Name"/>
+
+                    <TextView
+                        android:layout_marginHorizontal="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeMaxTextSize="100sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:maxLines="1"
+
+                        android:padding="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:layout_gravity="left"
+                        android:textSize="21dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textFontWeight="1200"/>
+
+                    <EditText
+                        android:layout_marginHorizontal="10dp"
+                        android:drawableEnd="@drawable/mail_34"
+                        android:padding="7dp"
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Email ID"/>
+
+                    <TextView
+                        android:layout_marginHorizontal="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeMaxTextSize="100sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:maxLines="1"
+
+                        android:padding="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contant no"
+                        android:layout_gravity="left"
+                        android:textSize="21dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textFontWeight="1200"/>
+
+                    <LinearLayout
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.hbb20.CountryCodePicker
+                            android:gravity="center"
+                            app:ccp_hintExampleNumber="true"
+                            android:id="@+id/country_code_picker"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                        </com.hbb20.CountryCodePicker>
+
+                        <EditText
+                            android:inputType="number"
+                            android:drawablePadding="5dp"
+                            android:drawableEnd="@drawable/phone_34"
+                            android:id="@+id/phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Contact No."/>
+
+
+                    </LinearLayout>
+
+"
+
+                    <TextView
+                        android:layout_marginHorizontal="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeMaxTextSize="100sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:maxLines="1"
+                        android:padding="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:layout_gravity="left"
+                        android:textSize="21dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textFontWeight="1200"/>
+
+                    <EditText
+                        android:inputType="textPassword"
+                        android:layout_marginHorizontal="10dp"
+                        android:drawablePadding="5dp"
+                        android:drawableEnd="@drawable/password_34"
+                        android:padding="7dp"
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Password"/>
+
+
+
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+
+                            android:buttonTint="@color/red"
+                            android:id="@+id/terms_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                           />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I agree with"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/tandc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" term and condition"
+
+                            android:textColor="@color/red"/>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginVertical="15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="12sp"
+                            android:autoSizeMaxTextSize="100sp"
+                            android:autoSizeStepGranularity="2sp"
+                            android:maxLines="1"
+
+                            android:textSize="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Already have an account?"
+                            android:textColor="@color/black"
+                            android:layout_marginHorizontal="5dp"/>
+                        <TextView
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="12sp"
+                            android:autoSizeMaxTextSize="100sp"
+                            android:autoSizeStepGranularity="2sp"
+                            android:maxLines="1"
+
+                            android:id="@+id/log"
+                            android:textSize="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sign in!"
+                            android:textColor="@color/red"
+                            android:layout_marginHorizontal="11dp"/>
+
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"/>
+
+
+                </LinearLayout>
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        <androidx.cardview.widget.CardView
+            android:backgroundTint="#D8D8D8"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/register"
+                android:background="@drawable/bottom_bg"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:text="Register"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</FrameLayout>
